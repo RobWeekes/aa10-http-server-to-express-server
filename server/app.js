@@ -43,7 +43,7 @@ app.use(express.json());
 // STEP 2: Handle route with param (/users/:userId) sending plain-text response
 app.get('/users/:userId', (req, res) => {
     // if(req) req.body =
-    const userID = req.params.userID;
+    const userID = req.params.userId;
     console.log(userID);
     res.status(200).send(`User details for userId: ${userID}`);
 })
